@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66e607311c9093468135d50f_74327d86-8a66-4b9d-81c4-3b65f86c1c6e",
+  "id": "home_bulk_import_format",
+  "unpublishedCollection": {
+    "name": "bulk_import_format",
+    "pageId": "home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "replace_single_quote",
+        "value": "bulk_import_filepicker.files[0].data.map(data => {\n  data.title = data.title.replace(/'/g, \"\");\n  data.original_title = data.original_title.replace(/'/g, \"\");\n  data.tagline = data.tagline.replace(/'/g, \"\");\n  data.overview = data.overview.replace(/'/g, \"\");\n  data.production_companies = data.title.replace(/'/g, \"\");\n  return data;\n})"
+      }
+    ]
+  }
+}

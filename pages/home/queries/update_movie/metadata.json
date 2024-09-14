@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66e607311c9093468135d50f_a7c1f433-7044-4238-86e5-eb83b2351f7d",
-  "id": "home_Update_public_movies1",
+  "id": "home_update_movie",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Update_public_movies1",
+    "name": "update_movie",
     "pageId": "home",
     "userSetOnLoad": false
   }

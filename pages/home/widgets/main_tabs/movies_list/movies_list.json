@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 62,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 66,
+  "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 610,
+      "bottomRow": 650,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -79,9 +79,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
-    },
-    {
       "key": "listData"
     },
     {
@@ -100,7 +97,7 @@
   "itemSpacing": 8,
   "key": "0ixj1lp6m0",
   "leftColumn": 1,
-  "listData": "{{Select_public_movies1.data}}",
+  "listData": "{{list_movies.data}}",
   "mainCanvasId": "cevity1u6z",
   "mainContainerId": "nddd5y6hza",
   "minWidth": 450,
@@ -109,7 +106,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "pageSize": 4,
+  "pageSize": 5,
   "parentColumnSpace": 15.6630859375,
   "parentId": "n4oc8xe2su",
   "parentRowSpace": 10,
@@ -119,10 +116,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "selectedItemView": "{{{}}}",
-  "serverSidePagination": true,
+  "serverSidePagination": false,
   "templateHeight": 160,
   "topRow": 1,
-  "totalRecordsCount": "{{Total_record_public_movies1.data[0].count}}",
+  "totalRecordsCount": "{{count_movies.data[0].count}}",
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "m4pwbr2oix",

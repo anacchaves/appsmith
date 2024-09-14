@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66e607311c9093468135d50f_e99478aa-7547-40c5-b3fa-3d25421f634f",
-  "id": "home_Total_record_public_movies1",
+  "id": "home_count_movies",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "Total_record_public_movies1",
+    "name": "count_movies",
     "pageId": "home",
     "userSetOnLoad": false
   }

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66e607311c9093468135d50f_39240b1b-33e1-42a4-9176-7642d7607986",
+  "id": "home_poster_url_prefix",
+  "unpublishedCollection": {
+    "name": "poster_url_prefix",
+    "pageId": "home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "path",
+        "value": "\"https://image.tmdb.org/t/p/w300_and_h450_bestv2\""
+      }
+    ]
+  }
+}

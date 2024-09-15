@@ -110,7 +110,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onPageChange": "{{list_select_movies.run();\ntable_count_movies.run()}}",
+  "onPageChange": "{{list_select_movies.run();\nlist_count_movies.run()}}",
   "pageSize": 2,
   "parentColumnSpace": 15.6630859375,
   "parentId": "n4oc8xe2su",

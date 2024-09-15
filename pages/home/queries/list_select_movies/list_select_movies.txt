@@ -1,5 +1,6 @@
 SELECT * FROM public.movies
 WHERE genres ilike '%{{select_genres.selectedOptionValue || ""}}%'
+AND keywords ilike '%{{keyword_filter_input.text || ""}}%'
 {{ multiselect_status_format.stringfy.length > 0 ? `AND status = ANY (ARRAY[${multiselect_status_format.stringfy}])` : "" }}
 LIMIT {{movies_list.pageSize}}
 OFFSET {{(movies_list.pageNo - 1) * movies_list.pageSize}}

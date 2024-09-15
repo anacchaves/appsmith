@@ -1,4 +1,26 @@
 UPDATE public.movies
-SET adult = {{movies_table.triggeredRow.adult}},
-title = {{movies_table.triggeredRow.title}}
+SET 
+title = {{movies_table.triggeredRow.title}},
+vote_average = {{movies_table.triggeredRow.vote_average}},
+vote_count = {{movies_table.triggeredRow.vote_count}},
+status = {{movies_table.triggeredRow.status}},
+release_date = {{movies_table.triggeredRow.release_date}},
+revenue = {{movies_table.triggeredRow.revenue}},
+runtime = {{movies_table.triggeredRow.runtime}},
+adult = {{movies_table.triggeredRow.adult}},
+backdrop_path = {{movies_table.triggeredRow.backdrop_path}},
+budget = {{movies_table.triggeredRow.budget}},
+homepage = {{movies_table.triggeredRow.homepage}},
+imdb_id = {{movies_table.triggeredRow.imdb_id}},
+original_language = {{movies_table.triggeredRow.original_language}},
+original_title = {{movies_table.triggeredRow.original_title}},
+overview = {{movies_table.triggeredRow.overview}},
+popularity = {{movies_table.triggeredRow.popularity}},
+poster_path = {{movies_table.triggeredRow.poster_path}},
+tagline = {{movies_table.triggeredRow.tagline}},
+genres = {{movies_table.triggeredRow.genres}},
+production_companies = {{movies_table.triggeredRow.production_companies}},
+production_countries = {{movies_table.triggeredRow.production_countries}},
+spoken_languages = {{movies_table.triggeredRow.spoken_languages}},
+keywords = {{movies_table.triggeredRow.keywords}}
 WHERE id = {{movies_table.triggeredRow.id}}

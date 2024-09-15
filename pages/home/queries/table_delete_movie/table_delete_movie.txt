@@ -1,0 +1,2 @@
+DELETE FROM public.movies
+WHERE id = {{movies_table.triggeredRow.id}}

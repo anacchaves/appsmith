@@ -9,7 +9,7 @@
     "variables": [
       {
         "name": "replace_single_quote",
-        "value": "bulk_import_filepicker.files[0].data.map(data => {\n  data.title = data.title.replace(/'/g, \"\");\n  data.original_title = data.original_title.replace(/'/g, \"\");\n  data.tagline = data.tagline.replace(/'/g, \"\");\n  data.overview = data.overview.replace(/'/g, \"\");\n  data.production_companies = data.title.replace(/'/g, \"\");\n  return data;\n})"
+        "value": "bulk_import_filepicker.files[0].data.map(data => {\n  data.title = data.title.replace(/'/g, \"\");\n  data.original_title = data.original_title.replace(/'/g, \"\");\n  data.tagline = data.tagline.replace(/'/g, \"\");\n  data.overview = data.overview.replace(/'/g, \"\");\n  data.production_companies = data.production_companies.replace(/'/g, \"\");\n  return data;\n})"
       }
     ]
   }

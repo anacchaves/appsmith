@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.movies\nSET adult = {{movies_table.triggeredRow.adult}},\ntitle = {{movies_table.triggeredRow.title}}\nWHERE id = {{movies_table.triggeredRow.id}}",
+      "body": "UPDATE public.movies\nSET \ntitle = {{movies_table.triggeredRow.title}},\nvote_average = {{movies_table.triggeredRow.vote_average}},\nvote_count = {{movies_table.triggeredRow.vote_count}},\nstatus = {{movies_table.triggeredRow.status}},\nrelease_date = {{movies_table.triggeredRow.release_date}},\nrevenue = {{movies_table.triggeredRow.revenue}},\nruntime = {{movies_table.triggeredRow.runtime}},\nadult = {{movies_table.triggeredRow.adult}},\nbackdrop_path = {{movies_table.triggeredRow.backdrop_path}},\nbudget = {{movies_table.triggeredRow.budget}},\nhomepage = {{movies_table.triggeredRow.homepage}},\nimdb_id = {{movies_table.triggeredRow.imdb_id}},\noriginal_language = {{movies_table.triggeredRow.original_language}},\noriginal_title = {{movies_table.triggeredRow.original_title}},\noverview = {{movies_table.triggeredRow.overview}},\npopularity = {{movies_table.triggeredRow.popularity}},\nposter_path = {{movies_table.triggeredRow.poster_path}},\ntagline = {{movies_table.triggeredRow.tagline}},\ngenres = {{movies_table.triggeredRow.genres}},\nproduction_companies = {{movies_table.triggeredRow.production_companies}},\nproduction_countries = {{movies_table.triggeredRow.production_countries}},\nspoken_languages = {{movies_table.triggeredRow.spoken_languages}},\nkeywords = {{movies_table.triggeredRow.keywords}}\nWHERE id = {{movies_table.triggeredRow.id}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

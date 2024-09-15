@@ -22,6 +22,7 @@
     }
   },
   "columnOrder": [
+    "EditActions1",
     "id",
     "title",
     "vote_average",
@@ -46,15 +47,16 @@
     "production_countries",
     "spoken_languages",
     "keywords",
-    "EditActions1"
+    "customColumn1"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726366422897,
+  "columnUpdatedAt": 1726425234556,
   "columnWidthMap": {
+    "customColumn1": 92,
     "title": 238
   },
   "defaultPageSize": 0,
@@ -182,6 +184,15 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.menuColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -207,6 +218,12 @@
     },
     {
       "key": "primaryColumns.adult.onCheckChange"
+    },
+    {
+      "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -262,13 +279,14 @@
       "isSaveDisabled": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( !movies_table.updatedRowIndices.includes(currentIndex)))}}",
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Save / Discard",
+      "label": "Update",
       "notation": "standard",
+      "onSave": "{{table_update_movie.run().then(() => {\n  showAlert('Table updated', 'success');\n  table_select_movies.run();\n}).catch(() => {\n  showAlert('Update failed', 'error');\n});}}",
       "originalId": "EditActions1",
       "saveActionLabel": "Save",
       "saveButtonColor": "#03B365",
       "saveIconAlign": "left",
-      "sticky": "right",
+      "sticky": "left",
       "thousandSeparator": true,
       "validation": {},
       "width": 150
@@ -370,6 +388,47 @@
       "originalId": "budget",
       "sticky": "",
       "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "Delete",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "#b91c1c",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "TERTIARY",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "delete",
+      "id": "customColumn1",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "{{movies_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "notation": "standard",
+      "onClick": "{{showModal(delete_confirmation_modal.name);}}",
+      "originalId": "customColumn1",
+      "sticky": "right",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

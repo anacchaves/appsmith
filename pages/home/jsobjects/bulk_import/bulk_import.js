@@ -4,7 +4,7 @@ export default {
 		data.original_title = data.original_title.replace(/'/g, "")
 		data.tagline = data.tagline.replace(/'/g, "")
 		data.overview = data.overview.replace(/'/g, "")
-		data.production_companies = data.title.replace(/'/g, "")
+		data.production_companies = data.production_companies.replace(/'/g, "")
 		return data
 	})
 }

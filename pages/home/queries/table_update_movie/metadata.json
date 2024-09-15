@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66e607311c9093468135d50f_e99478aa-7547-40c5-b3fa-3d25421f634f",
-  "id": "home_count_movies",
+  "gitSyncId": "66e607311c9093468135d50f_cc7670bc-ffb6-4d2d-8f21-8cc53a427d1f",
+  "id": "home_table_update_movie",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from public.movies;",
+      "body": "UPDATE public.movies\nSET adult = {{movies_table.triggeredRow.adult}},\ntitle = {{movies_table.triggeredRow.title}}\nWHERE id = {{movies_table.triggeredRow.id}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,9 +22,13 @@
       "name": "postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "count_movies",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "table_update_movie",
     "pageId": "home",
     "userSetOnLoad": false
   }

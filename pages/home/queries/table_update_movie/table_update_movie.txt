@@ -1,0 +1,4 @@
+UPDATE public.movies
+SET adult = {{movies_table.triggeredRow.adult}},
+title = {{movies_table.triggeredRow.title}}
+WHERE id = {{movies_table.triggeredRow.id}}

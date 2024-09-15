@@ -1,0 +1,2 @@
+SELECT COUNT(*) FROM public.movies
+WHERE "status" ilike '%{{select_status.selectedOptionValue || ""}}%'

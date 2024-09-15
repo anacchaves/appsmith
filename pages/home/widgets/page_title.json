@@ -1,59 +1,54 @@
 {
   "animateLoading": true,
-  "backgroundColor": "",
+  "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 14,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
-      "key": "fontFamily"
-    },
-    {
       "key": "borderRadius"
     },
     {
-      "key": "text"
+      "key": "backgroundColor"
+    },
+    {
+      "key": "fontFamily"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "fontStyle"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "{{}}",
+  "fontSize": "1.875rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "7vsuv377dd",
-  "leftColumn": 10,
+  "key": "v5wu3s15wk",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 12,
-  "mobileLeftColumn": 11,
-  "mobileRightColumn": 27,
-  "mobileTopRow": 8,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
   "overflow": "NONE",
-  "parentColumnSpace": 13.441925048828125,
-  "parentId": "x87rfnlveo",
+  "parentColumnSpace": 16.4375,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 50,
+  "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "{{currentItem.overview}}",
-  "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 8,
+  "text": "Your Movie Database",
+  "textAlign": "CENTER",
+  "textColor": "white",
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "b6laqcy716",
-  "widgetName": "Text3"
+  "widgetId": "cexkuswswu",
+  "widgetName": "page_title"
 }

@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 75,
+  "bottomRow": 69,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 700,
+      "bottomRow": 590,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -80,12 +80,13 @@
     },
     {
       "key": "listData"
-    },
-    {
-      "key": "totalRecordsCount"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onPageChange"
+    }
+  ],
   "enhancements": true,
   "flexVerticalAlignment": "start",
   "gridType": "vertical",
@@ -94,10 +95,10 @@
   "isLoading": false,
   "isVisible": true,
   "itemBackgroundColor": "#FFFFFF",
-  "itemSpacing": 8,
+  "itemSpacing": "4",
   "key": "0ixj1lp6m0",
   "leftColumn": 1,
-  "listData": "{{list_movies.data}}",
+  "listData": "{{list_select_movies.data}}",
   "mainCanvasId": "cevity1u6z",
   "mainContainerId": "nddd5y6hza",
   "minWidth": 450,
@@ -106,7 +107,8 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "pageSize": 3,
+  "onPageChange": "{{list_select_movies.run();\ncount_movies.run()}}",
+  "pageSize": 2,
   "parentColumnSpace": 15.6630859375,
   "parentId": "n4oc8xe2su",
   "parentRowSpace": 10,
@@ -116,10 +118,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "selectedItemView": "{{{}}}",
-  "serverSidePagination": false,
+  "serverSidePagination": true,
   "templateHeight": 160,
-  "topRow": 5,
-  "totalRecordsCount": "{{count_movies.data[0].count}}",
+  "topRow": 10,
+  "totalRecordsCount": "{list_count_movies.data[0].count}}",
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "m4pwbr2oix",

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66e607311c9093468135d50f_e99478aa-7547-40c5-b3fa-3d25421f634f",
-  "id": "home_count_movies",
+  "gitSyncId": "66e607311c9093468135d50f_62793070-58f9-4750-b054-a75c8dec9f3b",
+  "id": "home_list_count_movies",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from public.movies;",
+      "body": "SELECT COUNT(*) FROM public.movies\nWHERE \"status\" ilike '%{{select_status.selectedOptionValue || \"\"}}%'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "count_movies",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "list_count_movies",
     "pageId": "home",
     "userSetOnLoad": false
   }

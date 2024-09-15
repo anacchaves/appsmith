@@ -1,1 +1,1 @@
-SELECT COUNT(*) from public.movies where title ilike '%{{movies_table.searchText}}%';
+SELECT COUNT(*) from public.movies;

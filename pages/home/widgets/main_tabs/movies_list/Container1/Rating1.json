@@ -1,12 +1,9 @@
 {
-  "activeColor": "{{appsmith.theme.colors.primaryColor}}",
+  "activeColor": "#eab308",
   "animateLoading": true,
-  "bottomRow": 5,
+  "bottomRow": 4,
   "defaultRate": "{{currentItem.vote_average}}",
   "dynamicBindingPathList": [
-    {
-      "key": "activeColor"
-    },
     {
       "key": "defaultRate"
     }
@@ -43,7 +40,7 @@
     "Good",
     "Great"
   ],
-  "topRow": 1,
+  "topRow": 0,
   "type": "RATE_WIDGET",
   "widgetId": "m7aitkh897",
   "widgetName": "Rating1"

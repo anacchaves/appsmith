@@ -1,8 +1,8 @@
 {
   "gitSyncId": "66e607311c9093468135d50f_74327d86-8a66-4b9d-81c4-3b65f86c1c6e",
-  "id": "home_bulk_import_format",
+  "id": "home_bulk_import",
   "unpublishedCollection": {
-    "name": "bulk_import_format",
+    "name": "bulk_import",
     "pageId": "home",
     "pluginId": "js-plugin",
     "pluginType": "JS",

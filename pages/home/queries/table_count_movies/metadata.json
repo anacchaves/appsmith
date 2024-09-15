@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66e607311c9093468135d50f_2e1297a3-013e-4db6-8b7d-5ece6189754d",
-  "id": "home_table_select_movies",
+  "gitSyncId": "66e607311c9093468135d50f_e99478aa-7547-40c5-b3fa-3d25421f634f",
+  "id": "home_table_count_movies",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"movies\"\nORDER BY \"{{movies_table.sortOrder.column || 'id'}}\" {{movies_table.sortOrder.order || 'ASC'}}\nLIMIT {{movies_table.pageSize}}\nOFFSET {{(movies_table.pageNo - 1) * movies_table.pageSize}};",
+      "body": "SELECT COUNT(*) from public.movies;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,10 @@
       "name": "postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "table_select_movies",
+    "name": "table_count_movies",
     "pageId": "home",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

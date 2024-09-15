@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) FROM public.movies\nWHERE \"status\" ilike '%{{select_status.selectedOptionValue || \"\"}}%'",
+      "body": "SELECT COUNT(*) FROM public.movies\nWHERE \"genres\" ilike '%{{select_genres.selectedOptionValue || \"\"}}%'",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "list_count_movies",
     "pageId": "home",
     "userSetOnLoad": false

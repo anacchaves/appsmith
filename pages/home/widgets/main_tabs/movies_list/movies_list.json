@@ -14,7 +14,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 590,
+      "bottomRow": 560,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -80,6 +80,9 @@
     },
     {
       "key": "listData"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicTriggerPathList": [
@@ -107,7 +110,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onPageChange": "{{list_select_movies.run();\ncount_movies.run()}}",
+  "onPageChange": "{{list_select_movies.run();\ntable_count_movies.run()}}",
   "pageSize": 2,
   "parentColumnSpace": 15.6630859375,
   "parentId": "n4oc8xe2su",
@@ -120,8 +123,8 @@
   "selectedItemView": "{{{}}}",
   "serverSidePagination": true,
   "templateHeight": 160,
-  "topRow": 10,
-  "totalRecordsCount": "{list_count_movies.data[0].count}}",
+  "topRow": 13,
+  "totalRecordsCount": "{{list_count_movies.data[0].count}}",
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "m4pwbr2oix",

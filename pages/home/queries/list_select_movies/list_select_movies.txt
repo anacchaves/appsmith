@@ -1,4 +1,4 @@
 SELECT * FROM public.movies
-WHERE "status" ilike '%{{select_status.selectedOptionValue || ""}}%'
+WHERE genres ilike '%{{select_genres.selectedOptionValue || ""}}%'
 LIMIT {{movies_list.pageSize}}
 OFFSET {{(movies_list.pageNo - 1) * movies_list.pageSize}}

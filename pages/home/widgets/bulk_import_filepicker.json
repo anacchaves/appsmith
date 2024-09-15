@@ -40,7 +40,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onFilesSelected": "{{bulk_insert_movies.run().then(() => {\n  showAlert('Movies uploaded!', 'success');\n  count_movies.run();\n  resetWidget(\"bulk_import_filepicker\", true);\n}).catch(() => {\n  showAlert('Upload failed', 'error');\n});}}",
+  "onFilesSelected": "{{bulk_insert_movies.run().then(() => {\n  showAlert('Movies uploaded!', 'success');\n  table_count_movies.run();\n  resetWidget(\"bulk_import_filepicker\", true);\n  table_select_movies.run();\n}).catch(() => {\n  showAlert('Upload failed', 'error');\n});}}",
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,

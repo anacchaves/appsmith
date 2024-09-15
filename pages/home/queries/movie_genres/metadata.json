@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66e607311c9093468135d50f_e99478aa-7547-40c5-b3fa-3d25421f634f",
-  "id": "home_count_movies",
+  "gitSyncId": "66e607311c9093468135d50f_f6eec149-5e91-47ef-8483-d152631795ed",
+  "id": "home_movie_genres",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from public.movies;",
+      "body": "SELECT DISTINCT genres FROM public.movies",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -24,7 +24,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "count_movies",
+    "name": "movie_genres",
     "pageId": "home",
     "userSetOnLoad": false
   }

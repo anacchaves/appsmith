@@ -133,7 +133,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onTabSelected": "",
+  "onTabSelected": "{{list_select_movies.run();\nlist_count_movies.run()}}",
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "66e607311c9093468135d50f_f6eec149-5e91-47ef-8483-d152631795ed",
+  "gitSyncId": "66e607311c9093468135d50f_58eb859a-faa6-43e7-8393-4e419b5902fb",
   "id": "home_movie_status",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "movie_status",
     "pageId": "home",
     "userSetOnLoad": false

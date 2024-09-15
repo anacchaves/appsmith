@@ -1,5 +1,4 @@
 SELECT * FROM public."movies"
-WHERE "title" ilike '%{{movies_table.searchText || ""}}%'
 ORDER BY "{{movies_table.sortOrder.column || 'id'}}" {{movies_table.sortOrder.order || 'ASC'}}
 LIMIT {{movies_table.pageSize}}
 OFFSET {{(movies_table.pageNo - 1) * movies_table.pageSize}};

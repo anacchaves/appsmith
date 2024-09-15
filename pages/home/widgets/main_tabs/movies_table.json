@@ -54,6 +54,9 @@
     "task": 245
   },
   "columnUpdatedAt": 1726366422897,
+  "columnWidthMap": {
+    "title": 238
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -1096,7 +1099,7 @@
   "tableData": "{{table_select_movies.data}}",
   "textSize": "0.875rem",
   "topRow": 1,
-  "totalRecordsCount": "{{count_movies.data[0].count}}",
+  "totalRecordsCount": "{{table_count_movies.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",

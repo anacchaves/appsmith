@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66e607311c9093468135d50f_58eb859a-faa6-43e7-8393-4e419b5902fb",
-  "id": "home_movie_status",
+  "gitSyncId": "66e607311c9093468135d50f_c4c71847-7cb1-4e79-8ed7-84eef6e39b3c",
+  "id": "home_list_update_movie",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT status FROM public.movies",
+      "body": "UPDATE public.movies\nSET\nstatus = {{update_list_movie_form.formData.status}},\ngenres = {{update_list_movie_form.formData.genres}},\nkeywords = {{update_list_movie_form.formData.keywords}},\nadult = {{update_list_movie_form.formData.adult}}\nWHERE id = {{update_list_movie_form.formData.id}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "movie_status",
+    "name": "list_update_movie",
     "pageId": "home",
     "userSetOnLoad": false
   }

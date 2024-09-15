@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -22,46 +19,41 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
-  "isFilterable": true,
+  "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "9wizc0eaei",
+  "key": "slo68ejo69",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Genres",
+  "labelText": "Status",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 21,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 8,
-  "mobileLeftColumn": 39,
-  "mobileRightColumn": 59,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onOptionChange": "{{list_select_movies.run().then(() => {});\nlist_count_movies.run()}}",
-  "optionLabel": "genres",
-  "optionValue": "genres",
+  "optionLabel": "label",
+  "optionValue": "value",
   "parentColumnSpace": 15.611328125,
   "parentId": "n4oc8xe2su",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Select option(s)",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 21,
+  "rightColumn": 41,
   "serverSideFiltering": false,
-  "sourceData": "{{movie_genres.data}}",
+  "sourceData": "[\n  {\n    \"label\": \"Released\",\n    \"value\": \"Released\"\n  },\n\t{\n    \"label\": \"Upcoming\",\n    \"value\": \"Upcoming\"\n  },\n  {\n    \"label\": \"On Watchlist\",\n    \"value\": \"On Watchlist\"\n  },\n  {\n    \"label\": \"Watched\",\n    \"value\": \"Watched\"\n  }\n]",
   "topRow": 2,
-  "type": "SELECT_WIDGET",
+  "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
-  "widgetId": "vhgnykb72b",
-  "widgetName": "select_genres"
+  "widgetId": "z4u7f5rkq8",
+  "widgetName": "MultiSelect1"
 }

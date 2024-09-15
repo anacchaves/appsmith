@@ -11,32 +11,44 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconName": "more",
-  "isDisabled": false,
+  "isDisabled": "{{!movies_list.selectedItem}}",
   "isLoading": false,
-  "isVisible": false,
-  "key": "upamizmk7g",
-  "leftColumn": 60,
+  "isVisible": true,
+  "key": "7921ix7jhi",
+  "leftColumn": 59,
   "minWidth": 50,
-  "mobileBottomRow": 17,
-  "mobileLeftColumn": 60,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 13,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 17,
   "needsErrorInfo": false,
-  "parentColumnSpace": 13.441925048828125,
+  "onClick": "{{showModal(list_details_modal.name);}}",
+  "parentColumnSpace": 14.68597412109375,
   "parentId": "x87rfnlveo",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 63,
-  "tooltip": "",
   "topRow": 17,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "o9fks4knxy",
-  "widgetName": "IconButton1"
+  "widgetId": "wl8htettou",
+  "widgetName": "IconButton3"
 }

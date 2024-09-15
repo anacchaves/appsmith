@@ -1,0 +1,7 @@
+UPDATE public.movies
+SET
+status = {{update_list_movie_form.formData.status}},
+genres = {{update_list_movie_form.formData.genres}},
+keywords = {{update_list_movie_form.formData.keywords}},
+adult = {{update_list_movie_form.formData.adult}}
+WHERE id = {{update_list_movie_form.formData.id}}

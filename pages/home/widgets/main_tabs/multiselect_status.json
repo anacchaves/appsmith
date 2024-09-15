@@ -44,7 +44,7 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onOptionChange": "{{list_select_movies.run()}}",
+  "onOptionChange": "{{list_select_movies.run();\nlist_count_movies.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 15.611328125,

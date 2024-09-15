@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "66e607311c9093468135d50f_5ae3c33d-9088-4ecb-a6f4-6597d1270422",
+  "id": "home_multiselect_status_format",
+  "unpublishedCollection": {
+    "name": "multiselect_status_format",
+    "pageId": "home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "stringfy",
+        "value": "multiselect_status.selectedOptionValues.map(i => \"'\" + i + \"'\").join()"
+      }
+    ]
+  }
+}

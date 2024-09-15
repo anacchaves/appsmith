@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.movies\nWHERE genres ilike '%{{select_genres.selectedOptionValue || \"\"}}%'\nLIMIT {{movies_list.pageSize}}\nOFFSET {{(movies_list.pageNo - 1) * movies_list.pageSize}}",
+      "body": "SELECT * FROM public.movies\nWHERE genres ilike '%{{select_genres.selectedOptionValue || \"\"}}%'\n{{ multiselect_status_format.stringfy.length > 0 ? `AND status = ANY (ARRAY[${multiselect_status_format.stringfy}])` : \"\" }}\nLIMIT {{movies_list.pageSize}}\nOFFSET {{(movies_list.pageNo - 1) * movies_list.pageSize}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

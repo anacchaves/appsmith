@@ -14,7 +14,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 580,
+      "bottomRow": 570,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -123,7 +123,7 @@
   "selectedItemView": "{{{}}}",
   "serverSidePagination": true,
   "templateHeight": 160,
-  "topRow": 11,
+  "topRow": 12,
   "totalRecordsCount": "{{list_count_movies.data[0].count}}",
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
